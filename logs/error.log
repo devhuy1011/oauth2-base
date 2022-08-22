@@ -1,0 +1,249 @@
+2022-08-16 15:13:00 [ERROR]: uncaughtException: usersRouter is not defined
+ReferenceError: usersRouter is not defined
+    at Object.<anonymous> (D:\MyProject\oauth2-setup\/app.js:34:27)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module._compile (D:\MyProject\oauth2-setup\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Object.newLoader [as .js] (D:\MyProject\oauth2-setup\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at Object.<anonymous> (D:\MyProject\oauth2-setup\node_modules\@babel\node\lib\_babel-node.js:176:21)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2022-08-16 15:14:05 [ERROR]: uncaughtException: Cannot find module '..//user'
+Require stack:
+- D:\MyProject\oauth2-setup\server\config\connectDB.js
+- D:\MyProject\oauth2-setup\server\controllers\auth.js
+- D:\MyProject\oauth2-setup\server\routers\authRouter.js
+- D:\MyProject\oauth2-setup\app.js
+Error: Cannot find module '..//user'
+Require stack:
+- D:\MyProject\oauth2-setup\server\config\connectDB.js
+- D:\MyProject\oauth2-setup\server\controllers\auth.js
+- D:\MyProject\oauth2-setup\server\routers\authRouter.js
+- D:\MyProject\oauth2-setup\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at initialize (D:\MyProject\oauth2-setup\server\config\/connectDB.js:15:3)
+    at Object.<anonymous> (D:\MyProject\oauth2-setup\server\config\/connectDB.js:18:1)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module._compile (D:\MyProject\oauth2-setup\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Object.newLoader [as .js] (D:\MyProject\oauth2-setup\node_modules\pirates\lib\index.js:141:7)
+2022-08-16 15:15:18 [ERROR]: uncaughtException: Cannot find module '../utils/strVar'
+Require stack:
+- D:\MyProject\oauth2-setup\server\Models\authModel.js
+- D:\MyProject\oauth2-setup\server\config\connectDB.js
+- D:\MyProject\oauth2-setup\server\controllers\auth.js
+- D:\MyProject\oauth2-setup\server\routers\authRouter.js
+- D:\MyProject\oauth2-setup\app.js
+Error: Cannot find module '../utils/strVar'
+Require stack:
+- D:\MyProject\oauth2-setup\server\Models\authModel.js
+- D:\MyProject\oauth2-setup\server\config\connectDB.js
+- D:\MyProject\oauth2-setup\server\controllers\auth.js
+- D:\MyProject\oauth2-setup\server\routers\authRouter.js
+- D:\MyProject\oauth2-setup\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\MyProject\oauth2-setup\server\Models\/authModel.js:1:85)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module._compile (D:\MyProject\oauth2-setup\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Object.newLoader [as .js] (D:\MyProject\oauth2-setup\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+2022-08-16 15:15:39 [ERROR]: uncaughtException: Router.use() requires a middleware function but got a Object
+TypeError: Router.use() requires a middleware function but got a Object
+    at Function.use (D:\MyProject\oauth2-setup\node_modules\express\lib\router\index.js:469:13)
+    at Function.<anonymous> (D:\MyProject\oauth2-setup\node_modules\express\lib\application.js:227:21)
+    at Array.forEach (<anonymous>)
+    at Function.use (D:\MyProject\oauth2-setup\node_modules\express\lib\application.js:224:7)
+    at Object.<anonymous> (D:\MyProject\oauth2-setup\/app.js:36:5)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module._compile (D:\MyProject\oauth2-setup\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Object.newLoader [as .js] (D:\MyProject\oauth2-setup\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+2022-08-16 15:23:00 [ERROR]: uncaughtException: Cannot find module './server/seed/seed'
+Require stack:
+- D:\MyProject\oauth2-setup\app.js
+Error: Cannot find module './server/seed/seed'
+Require stack:
+- D:\MyProject\oauth2-setup\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Timeout._onTimeout (D:\MyProject\oauth2-setup\/app.js:50:5)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+2022-08-17 10:19:51 [ERROR]: uncaughtException: FacebookStrategy is not defined
+ReferenceError: FacebookStrategy is not defined
+    at Object.<anonymous> (D:\MyProject\oauth2-setup\server\middlewares\/passport.js:33:9)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module._compile (D:\MyProject\oauth2-setup\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Object.newLoader [as .js] (D:\MyProject\oauth2-setup\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\MyProject\oauth2-setup\server\routers\/authRouter.js:6:1)
+2022-08-17 10:22:09 [ERROR]: uncaughtException: OAuth2Strategy requires a clientID option
+TypeError: OAuth2Strategy requires a clientID option
+    at new OAuth2Strategy (D:\MyProject\oauth2-setup\node_modules\passport-oauth2\lib\strategy.js:87:34)
+    at new FacebookTokenStrategy (D:\MyProject\oauth2-setup\node_modules\passport-facebook-token\src\index.js:35:5)
+    at Object.<anonymous> (D:\MyProject\oauth2-setup\server\middlewares\/passport.js:33:5)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module._compile (D:\MyProject\oauth2-setup\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Object.newLoader [as .js] (D:\MyProject\oauth2-setup\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+2022-08-17 16:07:43 [ERROR]: uncaughtException: encodedToken is not defined
+ReferenceError: encodedToken is not defined
+    at authGoogleHandler (D:\MyProject\oauth2-setup\server\routers\/authRouter.js:31:17)
+    at Layer.handle [as handle_request] (D:\MyProject\oauth2-setup\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\MyProject\oauth2-setup\node_modules\express\lib\router\route.js:144:13)
+    at complete (D:\MyProject\oauth2-setup\node_modules\passport\lib\middleware\authenticate.js:271:13)
+    at D:\MyProject\oauth2-setup\node_modules\passport\lib\middleware\authenticate.js:278:15
+    at pass (D:\MyProject\oauth2-setup\node_modules\passport\lib\authenticator.js:428:14)
+    at Authenticator.transformAuthInfo (D:\MyProject\oauth2-setup\node_modules\passport\lib\authenticator.js:450:5)
+    at D:\MyProject\oauth2-setup\node_modules\passport\lib\middleware\authenticate.js:275:22
+    at IncomingMessage.req.login.req.logIn (D:\MyProject\oauth2-setup\node_modules\passport\lib\http\request.js:44:13)
+    at GooglePlusTokenStrategy.strategy.success (D:\MyProject\oauth2-setup\node_modules\passport\lib\middleware\authenticate.js:256:13)
+2022-08-17 16:35:37 [ERROR]: uncaughtException: Invalid status code: undefined
+RangeError: Invalid status code: undefined
+    at new NodeError (node:internal/errors:372:5)
+    at ServerResponse.writeHead (node:_http_server:275:11)
+    at ServerResponse.writeHead (D:\MyProject\oauth2-setup\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:266:8)
+    at ServerResponse.end (node:_http_outgoing:871:10)
+    at ServerResponse.send (D:\MyProject\oauth2-setup\node_modules\express\lib\response.js:232:10)
+    at authGoogleHandler (D:\MyProject\oauth2-setup\server\routers\/authRouter.js:29:36)
+    at Layer.handle [as handle_request] (D:\MyProject\oauth2-setup\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\MyProject\oauth2-setup\node_modules\express\lib\router\route.js:144:13)
+    at complete (D:\MyProject\oauth2-setup\node_modules\passport\lib\middleware\authenticate.js:271:13)
+2022-08-17 16:41:05 [ERROR]: uncaughtException: Invalid status code: undefined
+RangeError: Invalid status code: undefined
+    at new NodeError (node:internal/errors:372:5)
+    at ServerResponse.writeHead (node:_http_server:275:11)
+    at ServerResponse.writeHead (D:\MyProject\oauth2-setup\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:266:8)
+    at ServerResponse.end (node:_http_outgoing:871:10)
+    at ServerResponse.send (D:\MyProject\oauth2-setup\node_modules\express\lib\response.js:232:10)
+    at authGoogleHandler (D:\MyProject\oauth2-setup\server\routers\/authRouter.js:30:36)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2022-08-17 16:41:50 [ERROR]: uncaughtException: Invalid status code: undefined
+RangeError: Invalid status code: undefined
+    at new NodeError (node:internal/errors:372:5)
+    at ServerResponse.writeHead (node:_http_server:275:11)
+    at ServerResponse.writeHead (D:\MyProject\oauth2-setup\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:266:8)
+    at ServerResponse.end (node:_http_outgoing:871:10)
+    at ServerResponse.send (D:\MyProject\oauth2-setup\node_modules\express\lib\response.js:232:10)
+    at authGoogleHandler (D:\MyProject\oauth2-setup\server\routers\/authRouter.js:30:36)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+2022-08-18 14:50:54 [ERROR]: uncaughtException: D:\MyProject\oauth2-setup\server\middlewares\passport.js: Unexpected token, expected "," (89:24)
+
+[0m [90m 87 |[39m                         accessToken[33m:[39m user[33m.[39maccess_token[33m,[39m[0m
+[0m [90m 88 |[39m                         refreshToken[33m:[39m user[33m.[39mrefresh_token [0m
+[0m[31m[1m>[22m[39m[90m 89 |[39m                         isActive[33m:[39m user[33m.[39mis_active[33m,[39m[0m
+[0m [90m    |[39m                         [31m[1m^[22m[39m[0m
+[0m [90m 90 |[39m                     }[0m
+[0m [90m 91 |[39m                     [36mreturn[39m done([36mnull[39m[33m,[39m dataToBeSent)[33m;[39m[0m
+[0m [90m 92 |[39m                 }[0m
+SyntaxError: D:\MyProject\oauth2-setup\server\middlewares\passport.js: Unexpected token, expected "," (89:24)
+
+[0m [90m 87 |[39m                         accessToken[33m:[39m user[33m.[39maccess_token[33m,[39m[0m
+[0m [90m 88 |[39m                         refreshToken[33m:[39m user[33m.[39mrefresh_token [0m
+[0m[31m[1m>[22m[39m[90m 89 |[39m                         isActive[33m:[39m user[33m.[39mis_active[33m,[39m[0m
+[0m [90m    |[39m                         [31m[1m^[22m[39m[0m
+[0m [90m 90 |[39m                     }[0m
+[0m [90m 91 |[39m                     [36mreturn[39m done([36mnull[39m[33m,[39m dataToBeSent)[33m;[39m[0m
+[0m [90m 92 |[39m                 }[0m
+    at instantiate (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parse-error\credentials.ts:62:21)
+    at toParseError (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parse-error.ts:60:12)
+    at Parser.raise (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\tokenizer\index.ts:1464:19)
+    at Parser.unexpected (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\tokenizer\index.ts:1510:16)
+    at Parser.expect (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parser\util.ts:149:28)
+    at Parser.parseObjectLike (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parser\expression.ts:2100:14)
+    at Parser.parseExprAtom (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parser\expression.ts:1230:21)
+    at Parser.parseExprSubscripts (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parser\expression.ts:738:23)
+    at Parser.parseUpdate (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parser\expression.ts:714:21)
+    at Parser.parseMaybeUnary (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parser\expression.ts:675:23)
+2022-08-18 16:02:45 [ERROR]: uncaughtException: D:\MyProject\oauth2-setup\server\controllers\auth.js: Unexpected keyword 'const'. (96:12)
+
+[0m [90m 94 |[39m     [36mtry[39m {[0m
+[0m [90m 95 |[39m             [36mconst[39m userId [33m=[39m dataUser[33m.[39mid[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 96 |[39m             [36mconst[39m email [33m=[39m dataUser[33m.[39memail[33m,[39m[0m
+[0m [90m    |[39m             [31m[1m^[22m[39m[0m
+[0m [90m 97 |[39m             [36mconst[39m authGoogleId [33m=[39m dataUser[33m.[39mauth_google_id[33m,[39m[0m
+[0m [90m 98 |[39m             [36mconst[39m authFacebookId [33m=[39m dataUser[33m.[39mauth_facebook_id[33m,[39m[0m
+[0m [90m 99 |[39m             [36mconst[39m refreshTokenDb [33m=[39m dataUser[33m.[39mrefresh_token[33m,[39m[0m
+SyntaxError: D:\MyProject\oauth2-setup\server\controllers\auth.js: Unexpected keyword 'const'. (96:12)
+
+[0m [90m 94 |[39m     [36mtry[39m {[0m
+[0m [90m 95 |[39m             [36mconst[39m userId [33m=[39m dataUser[33m.[39mid[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 96 |[39m             [36mconst[39m email [33m=[39m dataUser[33m.[39memail[33m,[39m[0m
+[0m [90m    |[39m             [31m[1m^[22m[39m[0m
+[0m [90m 97 |[39m             [36mconst[39m authGoogleId [33m=[39m dataUser[33m.[39mauth_google_id[33m,[39m[0m
+[0m [90m 98 |[39m             [36mconst[39m authFacebookId [33m=[39m dataUser[33m.[39mauth_facebook_id[33m,[39m[0m
+[0m [90m 99 |[39m             [36mconst[39m refreshTokenDb [33m=[39m dataUser[33m.[39mrefresh_token[33m,[39m[0m
+    at instantiate (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parse-error\credentials.ts:62:21)
+    at toParseError (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parse-error.ts:60:12)
+    at Parser.raise (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\tokenizer\index.ts:1464:19)
+    at Parser.checkReservedWord (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parser\expression.ts:2902:12)
+    at Parser.parseIdentifierName (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parser\expression.ts:2851:12)
+    at Parser.parseIdentifier (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parser\expression.ts:2816:23)
+    at Parser.parseBindingAtom (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parser\lval.ts:381:17)
+    at Parser.parseVarId (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parser\statement.ts:1332:20)
+    at Parser.parseVar (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parser\statement.ts:1295:12)
+    at Parser.parseVarStatement (D:\MyProject\oauth2-setup\node_modules\@babel\parser\src\parser\statement.ts:964:10)
+2022-08-18 16:42:37 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at Function.listen (d:\MyProject\oauth2-setup\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (d:\MyProject\oauth2-setup\app.js:46:5)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+2022-08-18 16:51:07 [ERROR]: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at Function.listen (d:\MyProject\oauth2-setup\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (d:\MyProject\oauth2-setup\app.js:46:5)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+2022-08-18 17:17:23 [ERROR]: uncaughtException: Cannot find module '../middlewares'
+Require stack:
+- D:\MyProject\oauth2-setup\server\routers\authRouter.js
+- D:\MyProject\oauth2-setup\app.js
+Error: Cannot find module '../middlewares'
+Require stack:
+- D:\MyProject\oauth2-setup\server\routers\authRouter.js
+- D:\MyProject\oauth2-setup\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\MyProject\oauth2-setup\server\routers\/authRouter.js:3:17)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module._compile (D:\MyProject\oauth2-setup\node_modules\pirates\lib\index.js:136:24)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Object.newLoader [as .js] (D:\MyProject\oauth2-setup\node_modules\pirates\lib\index.js:141:7)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
