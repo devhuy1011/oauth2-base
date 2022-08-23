@@ -72,6 +72,9 @@ module.exports.createUser = async (data) => {
 //LOGIN
 module.exports.signIn = async (data) => {
     try {
+        let accessToken = "";
+        let refreshToken = "";
+
         const connection = db("user");
         const { email, password } = data;
 
@@ -88,10 +91,7 @@ module.exports.signIn = async (data) => {
             return response.WARN(400, "Invalid password!", "user_003");
         }
 
-        let accessToken = "";
-        let refreshToken = "";
-
-        if(user){
+        if(user && (user.access_token && user.refresh_token) !== null){
             const dataToBeSent = {
                 id: user.id,
                 displayName: user.display_name,
