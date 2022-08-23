@@ -175,3 +175,5 @@
 [HTTP]	2022-08-18 17:22:06	[info]	[REQUEST]	[::1]	[POST]	/api/v1/user/login	[] 	---- {"email":"test1@gmail.com","password":"abc123"} ----END HTTP----
 [HTTP]	2022-08-18 17:22:20	[info]	[REQUEST]	[::1]	[POST]	/api/v1/user/login	[] 	---- {"email":"test1@gmail.com","password":"abc123"} ----END HTTP----
 [HTTP]	2022-08-18 17:22:40	[info]	[REQUEST]	[::1]	[POST]	/api/v1/user/login	[] 	---- {"email":"test1@gmail.com","password":"abc123"} ----END HTTP----
+[HTTP]	2022-08-23 10:16:01	[info]	[REQUEST]	[::1]	[POST]	/api/v1/user/auth/refresh-token	[] 	---- {} ----END HTTP----
+[HTTP]	2022-08-23 10:16:42	[info]	[REQUEST]	[::1]	[POST]	/api/v1/user/auth/refresh-token	[] 	---- {} ----END HTTP----

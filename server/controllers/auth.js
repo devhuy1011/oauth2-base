@@ -128,26 +128,14 @@ module.exports.signIn = async (data) => {
     }
 };
 
-module.exports.refreshToken = async (refreshTokenClient, dataUser) => {
+module.exports.refreshToken = async (dataUser) => {
     try {
         const userId = dataUser.id;
         const email = dataUser.email;
         const authGoogleId = dataUser.auth_google_id;
         const authFacebookId = dataUser.auth_facebook_id;
-        const refreshTokenDb = dataUser.refresh_token;
 
         const basicInfo = { update_time: new Date() };
-
-        if (!refreshTokenClient) {
-            return response.WARN(401, "You are not authenticated!", "user_004");
-        }
-        if (refreshTokenDb !== refreshTokenClient) {
-            return response.WARN(
-                403,
-                "Refresh token is not a valid!",
-                "user_005"
-            );
-        }
 
         const newAccessToken = jwt.sign(
             {
@@ -162,8 +150,6 @@ module.exports.refreshToken = async (refreshTokenClient, dataUser) => {
             }
         );
         basicInfo.access_token = newAccessToken;
-
-        console.log("basicInfo", basicInfo);
 
         await db("user").update(basicInfo).where({ id: userId });
         return response.SUCCESS("Refresh token successfully", { accessToken: newAccessToken });
