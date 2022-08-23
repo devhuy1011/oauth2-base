@@ -74,6 +74,7 @@ module.exports.signIn = async (data) => {
     try {
         let accessToken = "";
         let refreshToken = "";
+        const basicInfo = {};
 
         const connection = db("user");
         const { email, password } = data;
@@ -105,6 +106,9 @@ module.exports.signIn = async (data) => {
         }else{
             accessToken = generateAccessToken(user);
             refreshToken = generateRefreshToken(user);
+            basicInfo.access_token = accessToken;
+            basicInfo.refresh_token = refreshToken;
+            await connection.update(basicInfo).where({ id: user.id });
         }
 
         const dataToBeSent = {

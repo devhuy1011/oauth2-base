@@ -29,9 +29,8 @@ const authGoogleHandler = async (req, res) => {
 }
 
 const refreshTokenHandler = async (req, res) => {
-  const refreshTokenClient = req.body.refresh_token;
   const dataUser = req.user;
-  const response = await refreshToken(refreshTokenClient, dataUser)
+  const response = await refreshToken(dataUser);
   return res.status(response.code).send(response.data)
 }
 

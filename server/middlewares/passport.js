@@ -71,7 +71,7 @@ passport.use(
         {
             jwtFromRequest:
                 ExtractJwt.fromAuthHeaderAsBearerToken("Authorization"),
-            secretOrKey: process.env.ACCESS_TOKEN_SECRET,
+                secretOrKey: process.env.REFRESH_TOKEN_SECRET,
         },
         async (payload, done) => {
             try {
